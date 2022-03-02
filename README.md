@@ -2,7 +2,7 @@
 Convertion QBus to ESX ( Guide )
 
 --------------------------------------------------------------------------------------------------
-Fundação Qbus e fundação ESX.
+Get Shared Object
  ```lua
 QBCore = nil 
 
@@ -34,10 +34,8 @@ end)
 
 --------------------------------------------------------------------------------------------------
 
-Beyler Bu kısım Yoktu eklendi.
-Anlamı:
-Oyuncu Giriş Kısmı İlik Oyuna Girerken Lazım, Yani Server Dosyasıdır.
-Bu olay, oyuncu sunucuya bağlandığında tetiklenir
+The Player's Input Part is required when entering the game, that is, it is the server file.
+This event is triggered when the player connects to the server
 ```lua
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
 AddEventHandler('QBCore:Client:OnPlayerLoaded',
@@ -52,7 +50,7 @@ AddEventHandler('esx:playerLoaded',
 
 --------------------------------------------------------------------------------------------------
 
-Server Dosyası, Job Kısmı Meslek Kısmıdır.
+Server File, Job Part is Occupation Part:
 ```lua
 RegisterNetEvent('QBCore:Client:OnJobUptade')
 AddEventHandler('QBCore:Client:OnJobUptade', 
@@ -67,8 +65,7 @@ AddEventHandler('esx:setJob',
 
 --------------------------------------------------------------------------------------------------
 
-Burdan Kontrol Edebilrsiniz.
-https://esx-framework.github.io/es_extended/common/events/onplayerdeath/#example-client-side-usage
+Event when player die:
 ```lua
 RegisterNetEvent('QBCore:Client:OnPlayerUnload')
 AddEventHandler('QBCore:Client:OnPlayerUnload',
@@ -83,9 +80,7 @@ AddEventHandler('esx:onPlayerDeath',
 
 --------------------------------------------------------------------------------------------------
 
-Beyler Bu kısım Yoktu eklendi.
-Anlamı:
-Bu işlev, en yakın oyuncu istemci kimliğini ve oynatıcıya olan mesafeyi alır.
+This function gets the nearest player client id and distance to the player:
 ```lua
 QBCore.Functions.GetClosestPlayer()
 ```
@@ -98,21 +93,22 @@ ESX.Game.GetClosestPlayer()
 
 --------------------------------------------------------------------------------------------------
 
-3D li Yazı Ekleme, Cilent Dosyası. Örnek : https://media.discordapp.net/attachments/623207764314816562/812096508786507806/resim_1.png
+Adding 3D Text, Cilent File. Example : ![image](https://user-images.githubusercontent.com/71574610/156451517-fb13d4b5-b4ac-488a-813b-010edef28fa0.png)
+
 ```lua
-QBCore.Functions.DrawText3D(1, 1, 1, 'Örnek')
+QBCore.Functions.DrawText3D(1, 1, 1, 'Example')
 ```
 # ↑ QBUS
 
 # ↓ ESX
 ```lua
-DrawText3D(1, 1, 1, 'Örnek') -- (aşağısına function açmanız gerekmektedir.)
-ESX.Game.Utils.DrawText3D(1, 1, 1, 'Örnek') -- ESX bunda gerek yok zaten var, fonksiyona.
+DrawText3D(1, 1, 1, 'Example') -- (You need to open the function below)
+ESX.Game.Utils.DrawText3D(1, 1, 1, 'Example') -- ESX doesn't need it, it already exists, the function
 ```
 
 --------------------------------------------------------------------------------------------------
+Open and Close Menu Default. Example : ![image](https://user-images.githubusercontent.com/71574610/156451674-ea55dbab-d870-4ec1-a8aa-93ea4f45c037.png)
 
-Menu Aç Kapat ESX & QBCore De Ki Menüler Örnekler : https://prnt.sc/u4f7s5
 ```lua
 QBCore.UI.Menu.Open
 QBCore.UI.Menu.CloseAll() -- (menu default scripti kurmanız gerekmektedir.)
