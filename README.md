@@ -13,14 +13,14 @@ Citizen.CreateThread(function()
 	end
 end)
 ```
-Para os novos na parte inferior - para a versão antiga na parte superior, se não funcionar, tente os dois ...
+For news QBus versions ↓ - For older QBus versions ↑, if not working try the two codes ...
 ```lua
 local QBCore = exports['qb-core']:GetCoreObject()
 ```
 
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 ESX = nil
 
@@ -42,9 +42,9 @@ Bu olay, oyuncu sunucuya bağlandığında tetiklenir
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
 AddEventHandler('QBCore:Client:OnPlayerLoaded',
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 RegisterNetEvent('esx:playerLoaded')
 AddEventHandler('esx:playerLoaded',
@@ -57,9 +57,9 @@ Server Dosyası, Job Kısmı Meslek Kısmıdır.
 RegisterNetEvent('QBCore:Client:OnJobUptade')
 AddEventHandler('QBCore:Client:OnJobUptade', 
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 RegisterNetEvent('esx:setJob')
 AddEventHandler('esx:setJob',
@@ -73,9 +73,9 @@ https://esx-framework.github.io/es_extended/common/events/onplayerdeath/#example
 RegisterNetEvent('QBCore:Client:OnPlayerUnload')
 AddEventHandler('QBCore:Client:OnPlayerUnload',
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 RegisterNetEvent('esx:onPlayerDeath')
 AddEventHandler('esx:onPlayerDeath',
@@ -89,9 +89,9 @@ Bu işlev, en yakın oyuncu istemci kimliğini ve oynatıcıya olan mesafeyi al�
 ```lua
 QBCore.Functions.GetClosestPlayer()
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 ESX.Game.GetClosestPlayer()
 ```
@@ -102,9 +102,9 @@ ESX.Game.GetClosestPlayer()
 ```lua
 QBCore.Functions.DrawText3D(1, 1, 1, 'Örnek')
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 DrawText3D(1, 1, 1, 'Örnek') -- (aşağısına function açmanız gerekmektedir.)
 ESX.Game.Utils.DrawText3D(1, 1, 1, 'Örnek') -- ESX bunda gerek yok zaten var, fonksiyona.
@@ -117,9 +117,9 @@ Menu Aç Kapat ESX & QBCore De Ki Menüler Örnekler : https://prnt.sc/u4f7s5
 QBCore.UI.Menu.Open
 QBCore.UI.Menu.CloseAll() -- (menu default scripti kurmanız gerekmektedir.)
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 ESX.UI.Menu.Open
 ESX.UI.Menu.CloseAll()
@@ -131,9 +131,9 @@ Bildirim Scripti Örnek : https://dosya.turkmmo.com/2020/09/36521_efa54848705a40
 ```lua
 QBCore.Functions.Notify("Araç kitlendi.", "error")
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 TriggerEvent('Notification',"Örnek.")
 ```
@@ -144,9 +144,9 @@ Enventer İtem Kısmı.
 ```lua
 xPlayer.Functions.GetItemByName 
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 xPlayer.getInventoryItem
 ```
@@ -156,9 +156,9 @@ Enventer İtem Kısmı.
 ```lua
 xPlayer.Functions.GetItemByName 
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 xPlayer.getInventoryItem
 ```
@@ -172,9 +172,9 @@ AddEventHandler('QBCore:Client:OnJobUpdate', function(job)
     PlayerData.job = job
 end)
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 RegisterNetEvent('esx:setJob')
 AddEventHandler('esx:setJob', function(job)
@@ -189,9 +189,9 @@ Para Ver Para Al Kısmı
 Player.Functions.AddMoney('bank', amount, "Bank depost") -- banka
 Player.Functions.RemoveMoney('cash', amount, "Bank depost") -- üstündeki para
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 xPlayer.removeAccountMoney('bank', amount) --para kaldırma
 xPlayer.addMoney(amount) -- para ekleme
@@ -203,9 +203,9 @@ Para Kısmı Data.
 ```lua
 Player.PlayerData.money["bank"]
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 xPlayer.getAccount('bank').money
 ```
@@ -216,9 +216,9 @@ Envanter İtem Silme Kısmı.
 ```lua
 xPlayer.Functions.RemoveItem 
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 xPlayer.removeInventoryItem 
 ```
@@ -229,9 +229,9 @@ Envanter İtem Ekleme Kısmı.
 ```lua
 xPlayer.Functions.AddItem
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 xPlayer.addInventoryItem
 ```
@@ -242,9 +242,9 @@ Karakter Kımsı Oyuncunun İd Si Gibi Birşey.
 ```lua
 QBCore.Functions.GetPlayer(src)
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 ESX.GetPlayerFromId(src)
 ```
@@ -254,9 +254,9 @@ ESX.GetPlayerFromId(src)
 ```lua
 QBCore.Functions.GetPlayerByCitizenId(src)
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 ESX.GetPlayerFromIdentifier(src)
 ```
@@ -272,9 +272,9 @@ QBCore.Functions.MathTrim(GetVehicleNumberPlateText(vehicle))
 ```lua
 QBCore.Functions.MathTrim 
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 ESX.Math.Trim(value)
 ```
@@ -290,9 +290,9 @@ QBCore.Functions.MathRound(GetVehicleBodyHealth(vehicle), 1),
 ```lua
 QBCore.Functions.MathRound()
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 # ÖRNEK
 ```lua
 local deger - 5.444
@@ -315,9 +315,9 @@ QBCore.Functions.DeleteVehicle()
 QBCore.Functions.GetVehicleProperties()
 QBCore.Functions.GetClosestVehicle()
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 ESX.Game.SpawnVehicle()
 ESX.Game.DeleteVehicle()
@@ -332,9 +332,9 @@ Oyuncu Kendi Karakterin.
 ```lua
 QBCore.Functions.GetPlayerData()
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 ESX.GetPlayerData()
 ```
@@ -345,9 +345,9 @@ ESX.GetPlayerData()
 ```lua
 QBCore.Functions.CreateUseableItem()
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 ESX.RegisterUsableItem()
 ```
@@ -358,9 +358,9 @@ Banka Para Kaldırma.
 ```lua
 Player.Functions.RemoveMoney()
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 xPlayer.removeMoney(money)
 ```
@@ -371,9 +371,9 @@ Dosya'lar İle Alakalı.
 ```lua
 QBCore.Functions.CreateCallback()
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 ESX.RegisterServerCallback()
 ```
@@ -384,9 +384,9 @@ Dosya'lar İle Alakalı.
 ```lua
 QBCore.Functions.TriggerCallback()
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 ESX.TriggerServerCallback()
 ```
@@ -413,9 +413,9 @@ QBCore.Functions.CreateCallback('system:fetchStatus', function(source, cb)
      end
 end)
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 ESX.RegisterServerCallback("system:fetchStatus", function(source, cb)
     local src = source
@@ -451,9 +451,9 @@ end)
 ```lua
 QBCore.Shared.Items
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 ESX.GetItems()
 ```
@@ -463,9 +463,9 @@ Sql bağlama kısmı
 ```lua
 QBCore.Functions.ExecuteSql()
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 ESX.ExecuteSql() --(ghmattimysql)
 MySQL.Async.execute()
@@ -478,9 +478,9 @@ RegisterCommand - yani chat komut kısmı.
 ```lua
 QBCore.Commands.Add()
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 RegisterCommand 
 ```
@@ -493,9 +493,9 @@ Karakter Kısmı Dır Data Sına Bağlama.
 local Player = QBCore.Functions.GetPlayer(source)
 ['@citizenid'] = Player.PlayerData.citizenid -- çekme Player
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 local user = ESX.GetPlayerFromId(src)
 ["@identifier"] = user.identifier -- çekme user
@@ -507,9 +507,9 @@ local user = ESX.GetPlayerFromId(src)
 QBCore.Shared.Trim()
 QBCore.Shared.GroupDigits()
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 ESX.Math.Trim()
 ESX.Math.GroupDigits()
@@ -520,9 +520,9 @@ ESX.Math.GroupDigits()
 ```lua
 QBCore.Functions.GetClosestObject()
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 ESX.Game.GetClosestObject()
 ```
@@ -532,9 +532,9 @@ ESX.Game.GetClosestObject()
 ```lua
 QBCore.Functions.GetVehicleInDirection()
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 ESX.Game.GetVehicleInDirection()
 ```
@@ -544,9 +544,9 @@ ESX.Game.GetVehicleInDirection()
 ```lua
 QBCore.Functions.GetPeds()
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 ESX.Game.GetPeds()
 ```
@@ -556,9 +556,9 @@ ESX.Game.GetPeds()
 ```lua
 QBCore.Functions.GetObjects()
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 ESX.Game.GetObjects()
 ```
@@ -568,9 +568,9 @@ ESX.Game.GetObjects()
 ```lua
 QBCore.Functions.GetClosestPed()
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 ESX.Game.GetClosestPed()
 ```
@@ -580,9 +580,9 @@ ESX.Game.GetClosestPed()
 ```lua
 QBCore.Functions.SpawnObject()
 ```
-# ÜSTEKİ QBUSCORE
+# ↑ QBUS
 
-# ALTAKİ ESX
+# ↓ ESX
 ```lua
 ESX.Game.SpawnObject()
 ```
