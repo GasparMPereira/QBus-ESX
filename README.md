@@ -3,6 +3,7 @@ Convertion QBus to ESX ( Guide )
 
 --------------------------------------------------------------------------------------------------
 Get Shared Object
+#
  ```lua
 QBCore = nil 
 
@@ -36,6 +37,7 @@ end)
 
 The Player's Input Part is required when entering the game, that is, it is the server file.
 This event is triggered when the player connects to the server
+#
 ```lua
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
 AddEventHandler('QBCore:Client:OnPlayerLoaded',
@@ -51,6 +53,7 @@ AddEventHandler('esx:playerLoaded',
 --------------------------------------------------------------------------------------------------
 
 Server File, Job Part is Occupation Part:
+#
 ```lua
 RegisterNetEvent('QBCore:Client:OnJobUptade')
 AddEventHandler('QBCore:Client:OnJobUptade', 
@@ -66,6 +69,7 @@ AddEventHandler('esx:setJob',
 --------------------------------------------------------------------------------------------------
 
 Event when player die:
+#
 ```lua
 RegisterNetEvent('QBCore:Client:OnPlayerUnload')
 AddEventHandler('QBCore:Client:OnPlayerUnload',
@@ -81,6 +85,7 @@ AddEventHandler('esx:onPlayerDeath',
 --------------------------------------------------------------------------------------------------
 
 This function gets the nearest player client id and distance to the player:
+#
 ```lua
 QBCore.Functions.GetClosestPlayer()
 ```
@@ -94,7 +99,7 @@ ESX.Game.GetClosestPlayer()
 --------------------------------------------------------------------------------------------------
 
 Adding 3D Text, Cilent File. Example : ![image](https://user-images.githubusercontent.com/71574610/156451517-fb13d4b5-b4ac-488a-813b-010edef28fa0.png)
-
+#
 ```lua
 QBCore.Functions.DrawText3D(1, 1, 1, 'Example')
 ```
