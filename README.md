@@ -98,7 +98,8 @@ ESX.Game.GetClosestPlayer()
 
 --------------------------------------------------------------------------------------------------
 
-Adding 3D Text, Cilent File. Example : ![image](https://user-images.githubusercontent.com/71574610/156451517-fb13d4b5-b4ac-488a-813b-010edef28fa0.png)
+Adding 3D Text, Cilent File. Example : 
+![image](https://user-images.githubusercontent.com/71574610/156451517-fb13d4b5-b4ac-488a-813b-010edef28fa0.png)
 #
 ```lua
 QBCore.Functions.DrawText3D(1, 1, 1, 'Example')
@@ -112,7 +113,8 @@ ESX.Game.Utils.DrawText3D(1, 1, 1, 'Example') -- ESX doesn't need it, it already
 ```
 
 --------------------------------------------------------------------------------------------------
-Open and Close Menu Default. Example : ![image](https://user-images.githubusercontent.com/71574610/156451674-ea55dbab-d870-4ec1-a8aa-93ea4f45c037.png)
+Open and Close Menu Default. Example : 
+![image](https://user-images.githubusercontent.com/71574610/156451674-ea55dbab-d870-4ec1-a8aa-93ea4f45c037.png)
 
 ```lua
 QBCore.UI.Menu.Open
