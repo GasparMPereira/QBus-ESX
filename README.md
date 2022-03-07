@@ -42,9 +42,9 @@ This event is triggered when the player connects to the server
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
 AddEventHandler('QBCore:Client:OnPlayerLoaded',
 ```
-# ↑ QBUS
-
-# ↓ ESX
+↑ QBUS
+#
+↓ ESX
 ```lua
 RegisterNetEvent('esx:playerLoaded')
 AddEventHandler('esx:playerLoaded',
