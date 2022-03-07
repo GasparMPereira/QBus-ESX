@@ -2,7 +2,7 @@
 Convertion QBus to ESX ( Guide )
 
 --------------------------------------------------------------------------------------------------
-#Get Shared Object
+# Get Shared Object
  ```lua
 QBCore = nil 
 
@@ -34,9 +34,9 @@ end)
 
 --------------------------------------------------------------------------------------------------
 
-The Player's Input Part is required when entering the game, that is, it is the server file.
+# The Player's Input Part is required when entering the game, that is, it is the server file.
 This event is triggered when the player connects to the server
-#
+
 ```lua
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
 AddEventHandler('QBCore:Client:OnPlayerLoaded',
