@@ -2,8 +2,7 @@
 Convertion QBus to ESX ( Guide )
 
 --------------------------------------------------------------------------------------------------
-Get Shared Object
-#
+#Get Shared Object
  ```lua
 QBCore = nil 
 
@@ -43,6 +42,7 @@ RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
 AddEventHandler('QBCore:Client:OnPlayerLoaded',
 ```
 ↑ QBUS
+
 ↓ ESX
 ```lua
 RegisterNetEvent('esx:playerLoaded')
@@ -51,13 +51,13 @@ AddEventHandler('esx:playerLoaded',
 
 --------------------------------------------------------------------------------------------------
 
-Server File, Job Part is Occupation Part:
-#
+#Server File, Job Part is Occupation Part:
 ```lua
 RegisterNetEvent('QBCore:Client:OnJobUptade')
 AddEventHandler('QBCore:Client:OnJobUptade', 
 ```
 ↑ QBUS
+
 ↓ ESX
 ```lua
 RegisterNetEvent('esx:setJob')
