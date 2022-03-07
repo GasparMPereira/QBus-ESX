@@ -19,9 +19,9 @@ For news QBus versions ↓ - For older QBus versions ↑, if not working try the
 local QBCore = exports['qb-core']:GetCoreObject()
 ```
 
-# ↑ QBUS
-
-# ↓ ESX
+↑ QBUS
+#
+↓ ESX
 ```lua
 ESX = nil
 
