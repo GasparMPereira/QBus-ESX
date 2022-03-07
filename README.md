@@ -51,7 +51,7 @@ AddEventHandler('esx:playerLoaded',
 
 --------------------------------------------------------------------------------------------------
 
-#Server File, Job Part is Occupation Part:
+# Server File, Job Part is Occupation Part:
 ```lua
 RegisterNetEvent('QBCore:Client:OnJobUptade')
 AddEventHandler('QBCore:Client:OnJobUptade', 
@@ -66,8 +66,7 @@ AddEventHandler('esx:setJob',
 
 --------------------------------------------------------------------------------------------------
 
-Event when player die:
-#
+# Event when player die:
 ```lua
 RegisterNetEvent('QBCore:Client:OnPlayerUnload')
 AddEventHandler('QBCore:Client:OnPlayerUnload',
@@ -82,8 +81,7 @@ AddEventHandler('esx:onPlayerDeath',
 
 --------------------------------------------------------------------------------------------------
 
-This function gets the nearest player client id and distance to the player:
-#
+# This function gets the nearest player client id and distance to the player:
 ```lua
 QBCore.Functions.GetClosestPlayer()
 ```
