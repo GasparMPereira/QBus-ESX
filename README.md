@@ -20,6 +20,7 @@ local QBCore = exports['qb-core']:GetCoreObject()
 ```
 
 ↑ QBUS
+
 ↓ ESX
 ```lua
 ESX = nil
