@@ -20,7 +20,6 @@ local QBCore = exports['qb-core']:GetCoreObject()
 ```
 
 ↑ QBUS
-#
 ↓ ESX
 ```lua
 ESX = nil
@@ -43,7 +42,6 @@ RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
 AddEventHandler('QBCore:Client:OnPlayerLoaded',
 ```
 ↑ QBUS
-#
 ↓ ESX
 ```lua
 RegisterNetEvent('esx:playerLoaded')
@@ -58,9 +56,8 @@ Server File, Job Part is Occupation Part:
 RegisterNetEvent('QBCore:Client:OnJobUptade')
 AddEventHandler('QBCore:Client:OnJobUptade', 
 ```
-# ↑ QBUS
-
-# ↓ ESX
+↑ QBUS
+↓ ESX
 ```lua
 RegisterNetEvent('esx:setJob')
 AddEventHandler('esx:setJob',
